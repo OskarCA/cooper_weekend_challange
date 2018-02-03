@@ -1,5 +1,5 @@
 describe("result", function() {
-  var result = new Result();
+  var person_result = new Result();
   var person;
 
   beforeEach(function() {
@@ -11,7 +11,7 @@ describe("result", function() {
   });
 
   it('should retun male', function() {
-    expect(result.gender_check(person)).toEqual('Poor');
+    expect(person_result.result(person)).toEqual('Poor');
   });
 
 
