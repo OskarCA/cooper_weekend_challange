@@ -7,9 +7,6 @@ Number.prototype.between = function(a, b) {
     return this >= min && this <= max;
 };
 
-// function result
-
-
 Result.prototype.result = function(obj) {
     switch (true) {
         case obj.gender === 'male':
@@ -27,17 +24,12 @@ Result.prototype.result_male = function(obj) {
                     return 'Excellent';
                 case obj.distance.between(2400, 2699):
                     return 'Above Average';
-
                 case obj.distance.between(2200, 2399):
                     return 'Average';
-
                 case obj.distance.between(2100, 2199):
                     return 'Below Average';
-
                 case (obj.distance < 2100):
                     return 'Poor';
-
-
             }
             break;
 
@@ -55,6 +47,7 @@ Result.prototype.result_male = function(obj) {
                     return 'Poor';
             }
             break;
+
         case obj.age.between(17, 19):
             switch (true) {
                 case obj.distance >= 3000:
@@ -69,8 +62,6 @@ Result.prototype.result_male = function(obj) {
                     return 'Poor';
             }
             break;
-
-
 
         case obj.age.between(20, 29):
             switch (true) {
@@ -142,17 +133,12 @@ Result.prototype.result_female = function(obj) {
                     return 'Excellent';
                 case obj.distance.between(1900, 1999):
                     return 'Above Average';
-
                 case obj.distance.between(1600, 1899):
                     return 'Average';
-
                 case obj.distance.between(1500, 1599):
                     return 'Below Average';
-
                 case obj.distance < 1500:
                     return 'Poor';
-
-
             }
             break;
 
@@ -184,7 +170,6 @@ Result.prototype.result_female = function(obj) {
                     return 'Poor';
             }
             break;
-
 
         case obj.age.between(20, 29):
             switch (true) {
