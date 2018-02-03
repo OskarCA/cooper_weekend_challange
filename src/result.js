@@ -13,31 +13,31 @@ Number.prototype.between = function(a, b) {
 Result.prototype.gender_check = function(obj) {
     switch (true) {
         case obj.gender === 'male':
-            Result.prototype.result_male(obj);
+            return Result.prototype.result_male(obj);
             break;
         case obj.gender === 'female':
-            result_female(obj);
+            return Result.prototype.result_female(obj);
             break;
     }
 }
 
 Result.prototype.result_male = function(obj) {
-    swtich(true) {
+    switch(true) {
         case obj.age.between(13, 14):
             switch (true) {
-                case obj.distance >= 2700:
+                case (obj.distance >= 2700):
                     return 'Excellent'
                     break;
-                case obj.distance.between(2400, 2699):
+                case (obj.distance.between(2400, 2699)):
                     return 'Above Average'
                     break;
-                case obj.distance.between(2200, 2399):
+                case (obj.distance.between(2200, 2399)):
                     return 'Average'
                     break;
-                case obj.distance.between(2100, 2199):
+                case (obj.distance.between(2100, 2199)):
                     return 'Below Average'
                     break;
-                case obj.distance <= 2100:
+                case (obj.distance <= 2100):
                     return 'Poor'
                 break;
 
