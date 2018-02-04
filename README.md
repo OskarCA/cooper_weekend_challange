@@ -3,19 +3,23 @@
 The challenge this weekend was to convert a cooper test template into JavaScript.
 
 To use the program you need to:
+* Create a person.
+* Person takes arguments:
+   * Gender
+   * Distance
+   * Age
 
-Create a person.
-Person takes arguments gender, distance, age as an object.
 
-Call result_cooper function and get your result.
+Call the result_cooper function and get your result.
 
 ```
 var person = new Person({gender: 'female', distance: 2200, age: 21});
+
 person.result_cooper();
 
 => 'Above Average'
 ```
-That was easy!
+#### That was easy!
 
 Nah if you wanna try it for real this is how you do it.
 
