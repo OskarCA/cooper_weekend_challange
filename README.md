@@ -1,3 +1,5 @@
+# Cooper Test Template
+
 The challenge this weekend was to convert a cooper test template into JavaScript.
 
 To use the program you need to:
@@ -17,7 +19,7 @@ That was easy!
 
 Nah if you wanna try it for real this is how you do it.
 
-To undertake this test you will require:
+## To undertake this test you will require:
 
 * 400 meter track
 * Stopwatch
