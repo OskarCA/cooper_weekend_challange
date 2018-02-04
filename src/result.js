@@ -26,7 +26,7 @@ Result.prototype.result_male = function(obj) {
                     return 'Above Average';
                 case obj.distance.between(2200, 2399):
                     return 'Average';
-                case obj.distance.between(2100, 2199):
+                case (obj.distance.between(2100, 2199)):
                     return 'Below Average';
                 case (obj.distance < 2100):
                     return 'Poor';
